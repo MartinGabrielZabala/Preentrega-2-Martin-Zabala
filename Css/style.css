@@ -6,6 +6,7 @@
 /* header */
 ul {
     list-style-type: none;
+    background-color: turquoise;
 }
 
 ul li {
@@ -15,7 +16,7 @@ ul li {
 }
   
 ul li a {
-    color: beige;
+    color: white;
     text-decoration: none;
     font-size: 15px;
     text-transform: uppercase;
@@ -24,7 +25,6 @@ ul li a {
 nav > ul li :hover {
     background-color: rgba(0, 0, 0, 0.568);
     padding: 3.2%;
-    
 }
 .inline{
     display: flex;
@@ -43,6 +43,7 @@ header{
     margin-left: 40%;
     width: 10%;
     height: 5%;
+    margin-bottom: 2%;
 }
 nav ul li{
     font-family: 'Smokum', cursive;
@@ -55,15 +56,6 @@ nav ul li{
     margin-left: 5%; 
 }
 /*empieza primer titulo*/
-section{
-   
-}
-.titulo1{
-     font-family: 'Smokum', cursive;
-    font-size: 40px;
-    text-align: center;
-
-}
 .descripcion .imagen {
     width: 20%;
     height: 15%;
@@ -91,29 +83,7 @@ section{
    font-size: 20px;
    text-decoration: double;
 }
-/*lista de precios*/
-.imgprecio{
-    display: grid;
-    height: 5%;
-    width: 5%;
-}
-.producto{
-    display: inline 10% 10% 10%;
-    height: 22%;
-    width: 20%;
-}
-.lista-precios{
-    display: flex;
-    gap: 10%;
-    border-radius: 0,25rem;
-    border: 5%;
-}
-.costo{
-    display: flex;
-    gap: 0% 10%;
-}
-
-
+/*Pegatinas*/
 .informacionindex {
     display: flex;
     flex-wrap: column wrap;
@@ -124,6 +94,43 @@ section{
         height: 70px;
         width: 80px; 
         font-size: 20px;
+        text-align: center;
+}
+.imagenindextextder{
+    text-align: center;
 }
 .txtder {
     margin-left: 30%; }
+
+/*Carousel*/
+.carousel-inner .carousel-caption {
+    color: #000000;
+    height: 5%;
+}
+.carousel-control-next{
+    width: auto;
+    height: 80px;
+}
+.carousel-inner .carousel-item {
+    width: 80%;
+    margin: 200px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 10%;
+}
+
+/* Historia*/
+h2 {
+    color: black ;
+    font-family: "anton", cursive;
+    font-size: 30px;
+}
+.imgd{
+    height: 200px;
+    width: auto;
+    margin-left: 30%;
+    border-radius: 5%;
+}
+.texthisto{
+    
+}
