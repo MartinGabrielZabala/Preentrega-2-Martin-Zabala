@@ -2,17 +2,32 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans';
 }
+html{
+    height: 100%;
+}
+body{
+        background-color: rgb(255, 255, 255);
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+}
+
 /* header */
 ul {
     list-style-type: none;
-    background-color: turquoise;
+    background-color: rgb(224, 64, 64);
+    margin-right: 79;
 }
 
 ul li {
     display: inline;
     padding: 10px;
-    font-size: 30px;
+    font-size: 25px;
 }
   
 ul li a {
@@ -24,11 +39,11 @@ ul li a {
   
 nav > ul li :hover {
     background-color: rgba(0, 0, 0, 0.568);
-    padding: 3.2%;
 }
 .inline{
     display: flex;
-    margin-left: 100%;
+    margin-left: 93%;
+
 }
 .inline .iconos{
     height: 40px;
@@ -36,7 +51,7 @@ nav > ul li :hover {
 }
 header{
     font-family: 'Smokum', cursive;
-    width: 120%;
+    width: 100%;
     height: 60%;
 }
 .logo{
@@ -53,11 +68,15 @@ nav ul li{
     color: red;
     text-decoration: none;
     margin-right: 70px;
-    margin-left: 5%; 
+    margin-left: 1%; 
 }
 /*empieza primer titulo*/
-.titulo
-.descripcion .imagen {
+.titulo1{
+    font-family: 'Smokum', cursive;
+    font-size: 40px;
+    text-align: center;
+}
+.imagen1 {
     width: 20%;
     height: 15%;
     border-radius: 5%;
@@ -72,7 +91,6 @@ nav ul li{
     font-family: 'Smokum', cursive;
    font-size: 40px;
    text-align: center;
-
 }
 .descripcion .imagen2 {
    width: 20%;
@@ -97,29 +115,50 @@ nav ul li{
         font-size: 20px;
         text-align: center;
 }
-.imagenindextextder{
+.imagenindextxtder{
     text-align: center;
+    height: 70px;
+    width: 80px;
+    font-size: 20px;
 }
 .txtder {
     margin-left: 30%; }
 
 /*Carousel*/
+.titul{
+    font-family: 'Smokum', cursive;
+    font-size: 60px;
+    text-align: center;
+    justify-content: center;
+}
+.carousel-inner{
+ margin-left: 15%;
+}
 .carousel-inner .carousel-caption {
     color: #000000;
     height: 5%;
+    margin-right: 10%;
 }
 .carousel-control-next{
     width: auto;
     height: 80px;
 }
 .carousel-inner .carousel-item {
-    width: 80%;
+    width: 50%;
     margin: 200px;
     margin-top: 2%;
     margin-bottom: 2%;
     border-radius: 10%;
 }
-
+.colorboton{
+    background-color: red;
+    width: 10%;
+    height: 10%;
+    margin-top: 10%;
+}
+.colorboton2{
+    margin-top: 20%;
+}
 /* Historia*/
 h2 {
     color: black ;
@@ -135,4 +174,215 @@ h2 {
 .texthisto{
     text-align: center;
 
+}
+/*footer*/
+footer .row{
+    margin-top: 100%;
+}
+a {
+    text-decoration: none;
+  }
+  footer div p{
+        font-size: 10px;
+        align-items: center;
+  }
+  .pie {
+    border-style: groove;
+  }
+  .pieconf {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 100%;
+  }
+  .txtfooter {
+    display: flex;
+    flex-wrap: row wrap;
+    margin-top: 3%;
+    flex-direction: column;
+  }
+  .imagenp{
+    width: 40px;
+    height: 40px;
+    border-radius: 4%;
+  }
+
+/*compra*/
+.contenido{
+    max-width: 1100px;
+    width: 300%;
+    margin: 40px auto;
+    flex-wrap: wrap;
+}
+.mostrador{
+    width: 100%;
+    transition: .5s ease;
+}
+.mostrador .fila{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    margin-bottom: 55px;
+}
+.mostrador .fila .item{
+    max-width: 210px;
+    padding: 30px;
+    height: 266px;
+    text-align: center;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .3s;
+}
+.mostrador .fila .item:hover{
+    background-color: #e6e6e6;
+}
+.mostrador .fila .item img{
+    width: 100%;
+    margin: 30px 0;
+}
+.mostrador .fila .item .descripcion{
+    color: #707070;
+    font-weight: bold;
+}
+.mostrador .fila .item .precio{
+    color: #f85151;
+    font-weight: bold;
+    font-size: 20px;
+}
+/*contacto*/
+.footera{
+    margin-top: 10%;
+}
+.login-box {
+    width: 320px;
+    height: 420px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    margin-top: 20%;
+    margin-left: 47%;
+  }
+  .login-box .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    top: -50px;
+    left: calc(50% - 50px);
+  }
+  
+  .login-box h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+  }
+  
+  .login-box label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+  }
+  
+  .login-box input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .login-box input[type="text"], .login-box input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .login-box input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #b80f22;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+  
+  .login-box input[type="submit"]:hover {
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+  }
+  
+  .login-box a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+  }
+  
+  .login-box a:hover {
+    color: #fff;
+  }
+/*Nuestra Birra */
+.infoc{
+    justify-content: center;
+    display: inline;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+.tipoc{
+    justify-content: center;
+    font-size: 50px; 
+    color: #e6e6e6;
+    letter-spacing: 3px;
+    transition: 1s;
+    text-shadow: 0 0 5px red,
+    0 0 25px red,
+    0 0 50px red, 
+    0 0 100px red;
+    margin-left: 45%;
+}
+.textc{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-transform: none;
+}
+/*Historia*/
+.titt{
+    justify-content: center;
+    font-size: 50px; 
+    color: #e6e6e6;
+    letter-spacing: 3px;
+    transition: 1s;
+    text-shadow: 0 0 5px red,
+    0 0 25px red,
+    0 0 50px red, 
+    0 0 100px red;
+    margin-left: 35%;
+}
+.vg{
+    height: 30%;
+    width: 30%;
+    border-radius: 5%;
+    margin-left: 30%;
+}
+.textd{
+    color: #000000;
+    text-decoration: double;
+    font-size: 20px;
+    justify-self: center;
+    justify-content: center;
+}
+.videogc{
+    width: 30%;
+    border-radius: 5%;
+    margin-left: 38%;
 }
